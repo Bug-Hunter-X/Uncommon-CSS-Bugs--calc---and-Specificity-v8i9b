@@ -1,0 +1,3 @@
+The CSS property `calc()` is used to perform calculations within CSS. However, if you use `calc()` with other CSS properties that require a specific unit, you might encounter unexpected behavior. For instance, if you try to use `calc(100% - 10px)` for the `width` property within a flexbox container and the container's width is not defined explicitly, the calculation might fail because the `100%` value is not directly available.
+
+Another uncommon issue is related to the specificity of CSS selectors. When you have several rules that apply to the same element, CSS will resolve conflicts based on selector specificity. In some cases, it might not be evident which rule will take precedence. This could lead to unexpected styling.
